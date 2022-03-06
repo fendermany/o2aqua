@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Личный кабинет</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220306203339" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=2594e4ae-e699-4be3-9a7d-2cc3562a2ef1&lang=ru_RU&_v=20220306203339" type="text/javascript"></script>
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="header__container">
+					<div class="header__geo _icon-geo">
+						<div class="header__geo-current">
+							Город: <a href="javascript:">Москва</a>
+						</div>
+						<a href="" class="header__geo-all">Пункты выдачи</a>
+					</div>
+					<div class="header__top-menu">
+						<a href="tel:1412412" class="header__phone _icon-phone">8 800 000 000 000</a>
+						<a href="javascript:" class="header__faq">Часто задаваемые вопросы</a>
+						<a href="javascript:" class="header__orders">Мои заказы</a>
+					</div>
+					<div class="hamburger__wrapper">
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="header__wrapper">
+				<div class="header__body">
+					<div class="header__container">
+						<div data-da=".header__top .header__container,767.98,1" class="header__logo">
+							<a href="/">
+								<img class="_lazy" data-src="img/header/logo.svg" alt="logo" />
+							</a>
+						</div>
+						<button data-da=".header__top .header__container,767.98,2" class="header__toggleButton toggleButton _icon-catalog-btn-icon">
+							Каталог <span>&nbsp;товаров</span>
+							<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M9.7803 0.219668C10.0732 0.512558 10.0732 0.987438 9.7803 1.28033L5.53033 5.5303C5.23744 5.8232 4.76256 5.8232 4.46967 5.5303L0.219668 1.28033C-0.0732225 0.987438 -0.0732225 0.512558 0.219668 0.219668C0.512558 -0.0732225 0.987438 -0.0732225 1.28033 0.219668L5 3.93934L8.7197 0.219668C9.0126 -0.0732225 9.4874 -0.0732225 9.7803 0.219668Z" fill="#6FCF97" />
+							</svg>
+						</button>
+						<form data-da=".header__search-mobwrapper .header__container, 991.92, first" action="#" class="header__search">
+							<div class="header__search-inner">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Искать товары и категории" class="input" />
+								<button type="submit" class="_icon-search"></button>
+							</div>
+						</form>
+						<div data-da=".header__top .header__container,767.98,3" class="header__woobar">
+							<button data-popup="#popup_auth" button="btn" class="header__auth _icon-auth">
+								Войти
+							</button>
+							<a href="javascript:" class="header__wishlist _icon-wishlist">
+								Избранное
+								<span>1</span>
+							</a>
+							<a href="javascript:" class="header__cart _icon-cart">
+								Корзина
+								<span>1</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__menu menu">
+					<div class="header__container">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item _active">
+									<a href="javascript:" class="menu__link">Neo Media</a>
+								</li>
+								<li class="menu__item">
+									<a href="javascript:" class="menu__link">Neo Diffuser</a>
+								</li>
+								<li class="menu__item">
+									<a href="javascript:" class="menu__link">Neo Flow</a>
+								</li>
+								<li class="menu__item">
+									<a href="javascript:" class="menu__link">Neo Soil</a>
+								</li>
+								<li class="menu__item">
+									<a href="javascript:" class="menu__link">Neo CO2</a>
+								</li>
+								<li class="menu__item">
+									<a href="javascript:" class="menu__link">Neo Fertilizer</a>
+								</li>
+								<li class="menu__item">
+									<a href="javascript:" class="menu__link">Аквариумы</a>
+								</li>
+								<li class="menu__item">
+									<a href="javascript:" class="menu__link">Блог</a>
+								</li>
+								<li class="menu__item">
+									<a href="javascript:" class="menu__link">О нас</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__search-mobwrapper">
+					<div class="header__container"></div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page personal">
+			<div class="personal__container">
+				<div class="perosnal__breadcrumbs breadcrumbs">
+					<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="https://example.com/dresses">
+								<span itemprop="name">Dresses</span></a>
+							<meta itemprop="position" content="1" />
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="https://example.com/dresses/real">
+								<span itemprop="name">Real Dresses</span></a>
+							<meta itemprop="position" content="2" />
+						</li>
+					</ol>
+				</div>
+				<div class="personal__wrapper">
+					<aside class="personal__aside profile">
+						<div class="profile__img">
+							<img class="_lazy" data-src="img/personal-area/avatar.svg" alt="avatar" />
+						</div>
+						<div class="profile__name">Руслан Бекирович</div>
+						<ul class="profile__mainlist">
+							<li class="_active">
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M3.08366 2.49984C2.76149 2.49984 2.50033 2.761 2.50033 3.08317V22.9165C2.50033 23.2387 2.76149 23.4998 3.08366 23.4998H22.917C23.2392 23.4998 23.5003 23.2387 23.5003 22.9165V3.08317C23.5003 2.761 23.2392 2.49984 22.917 2.49984H3.08366ZM0.166992 3.08317C0.166992 1.47234 1.47283 0.166504 3.08366 0.166504H22.917C24.5278 0.166504 25.8337 1.47234 25.8337 3.08317V22.9165C25.8337 24.5273 24.5278 25.8332 22.917 25.8332H3.08366C1.47283 25.8332 0.166992 24.5273 0.166992 22.9165V3.08317ZM4.83366 5.99984C4.83366 5.3555 5.35599 4.83317 6.00033 4.83317H10.667C11.3113 4.83317 11.8337 5.3555 11.8337 5.99984V10.6665C11.8337 11.3108 11.3113 11.8332 10.667 11.8332H6.00033C5.35599 11.8332 4.83366 11.3108 4.83366 10.6665V5.99984ZM7.16699 7.1665V9.49984H9.50033V7.1665H7.16699ZM14.167 5.99984C14.167 5.3555 14.6893 4.83317 15.3337 4.83317H20.0003C20.6447 4.83317 21.167 5.3555 21.167 5.99984C21.167 6.64417 20.6447 7.1665 20.0003 7.1665H15.3337C14.6893 7.1665 14.167 6.64417 14.167 5.99984ZM14.167 10.6665C14.167 10.0222 14.6893 9.49984 15.3337 9.49984H20.0003C20.6447 9.49984 21.167 10.0222 21.167 10.6665C21.167 11.3108 20.6447 11.8332 20.0003 11.8332H15.3337C14.6893 11.8332 14.167 11.3108 14.167 10.6665ZM4.83366 15.3332C4.83366 14.6888 5.35599 14.1665 6.00033 14.1665H10.667C11.3113 14.1665 11.8337 14.6888 11.8337 15.3332V19.9998C11.8337 20.6442 11.3113 21.1665 10.667 21.1665H6.00033C5.35599 21.1665 4.83366 20.6442 4.83366 19.9998V15.3332ZM7.16699 16.4998V18.8332H9.50033V16.4998H7.16699ZM14.167 15.3332C14.167 14.6888 14.6893 14.1665 15.3337 14.1665H20.0003C20.6447 14.1665 21.167 14.6888 21.167 15.3332C21.167 15.9775 20.6447 16.4998 20.0003 16.4998H15.3337C14.6893 16.4998 14.167 15.9775 14.167 15.3332ZM14.167 19.9998C14.167 19.3555 14.6893 18.8332 15.3337 18.8332H20.0003C20.6447 18.8332 21.167 19.3555 21.167 19.9998C21.167 20.6442 20.6447 21.1665 20.0003 21.1665H15.3337C14.6893 21.1665 14.167 20.6442 14.167 19.9998Z" fill="#A6ABB3" />
+								</svg>
+
+								<a href="javascript:">Мои заказы</a>
+							</li>
+							<li>
+								<svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M24.667 0.0834961C24.8404 0.0869921 25.0048 0.118684 25.1691 0.196801C25.3385 0.277821 25.4876 0.399894 25.6003 0.550163C25.6743 0.660288 25.657 0.627241 25.6003 0.550163C25.7514 0.751649 25.8337 0.998365 25.8337 1.25016C25.8332 1.18802 25.8307 1.16105 25.8337 1.25016V18.7502C25.8337 19.3945 25.3113 19.9168 24.667 19.9168H1.33366C0.689327 19.9168 0.166992 19.3945 0.166992 18.7502V1.25016C0.166992 1.0413 0.223653 0.833905 0.330237 0.654777C0.547434 0.288805 0.92364 0.0917625 1.33366 0.0834961H24.667ZM23.5003 3.5835L13.7003 10.9335C13.327 11.2135 12.8277 11.2415 12.4291 11.0175L12.3003 10.9335L2.50033 3.5835V17.5835H23.5003V3.5835ZM4.83366 2.41683L13.0003 8.54183L21.167 2.41683H4.83366Z" fill="#A6ABB3" />
+								</svg>
+
+								<a href="javascript:">Моя корзина</a>
+							</li>
+							<li>
+								<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.5C0 2.91017 2.91015 0 6.5 0C8.24701 0 9.83288 0.689818 11 1.80968C12.1671 0.689818 13.753 0 15.5 0C19.0898 0 22 2.91017 22 6.5C22 9.63412 20.164 12.4994 18.0231 14.6615C15.8724 16.8335 13.2421 18.4718 11.3154 19.1121C11.1106 19.1801 10.8894 19.1801 10.6846 19.1121C8.75788 18.4718 6.12761 16.8335 3.97692 14.6615C1.83596 12.4994 0 9.63412 0 6.5ZM6.5 2C4.01472 2 2 4.01473 2 6.5C2 8.86588 3.41404 11.2506 5.39808 13.2543C7.24453 15.119 9.43684 16.5021 11 17.1011C12.5632 16.5021 14.7555 15.119 16.6019 13.2543C18.586 11.2506 20 8.86588 20 6.5C20 4.01473 17.9853 2 15.5 2C13.9789 2 12.6337 2.75379 11.8176 3.91266C11.6303 4.17865 11.3253 4.3369 11 4.3369C10.6747 4.3369 10.3697 4.17865 10.1824 3.91266C9.36631 2.75379 8.02112 2 6.5 2Z" fill="#A6ABB3" />
+								</svg>
+
+								<a href="javascript:">Избранное</a>
+							</li>
+						</ul>
+						<ul class="profile__secondlist">
+							<li><a href="javascript:">Настройки</a></li>
+							<li><a href="javascript:">Написать нам</a></li>
+							<li><a href="javascript:">Выйти</a></li>
+						</ul>
+						<a href="javascript:" class="profile__policy">Политика конфиденциальности</a>
+						<a href="javascript:" class="profile__terms">Пользовательское соглашение</a>
+					</aside>
+					<div class="personal__body">
+						<h1 class="personal__title">Все заказы</h1>
+						<div data-tabs class="personal__tabs">
+							<nav class="personal__tabs-navigation">
+								<div data-tabs-titles class="personal__tabs-inner">
+									<button type="button" class="personal__tabs-title _tab-active">
+										Все заказы
+									</button>
+									<button type="button" class="personal__tabs-title">
+										Неоплаченные
+									</button>
+									<button type="button" class="personal__tabs-title">
+										Активные
+									</button>
+								</div>
+							</nav>
+							<div data-tabs-body class="personal__tabs-content">
+								<div class="personal__tabs-body personal__all">
+									<ul class="personal__list">
+										<li class="personal__item">
+											<div class="personal__item-title">
+												ID заказа 2647494
+											</div>
+											<table class="personal__table">
+												<tbody>
+													<tr>
+														<td>Статус:</td>
+														<td>
+															<span class="personal__table-status">Выдан покупателю</span><span class="personal__table-update">Обновлен 10 февраля 2022г. 17:02</span>
+														</td>
+													</tr>
+													<tr>
+														<td>Дата заказа:</td>
+														<td>Четверг, 10 февраля 2022 г., 09:34</td>
+													</tr>
+													<tr>
+														<td>Дата доставки:</td>
+														<td>Четверг, 10 февраля</td>
+													</tr>
+													<tr>
+														<td>Пункт выдачи:</td>
+														<td>г. Москва, улица Петербургская, дом №52</td>
+													</tr>
+													<tr>
+														<td>Сумма заказа:</td>
+														<td>10 975 ₽</td>
+													</tr>
+												</tbody>
+											</table>
+											<div data-spollers class="personal__prodlist">
+												<button type="button" data-spoller class="personal__prodlist-title _icon-arrow-down">
+													<span>4 товара</span>
+												</button>
+												<div class="personal__prodlist-body">Товары</div>
+											</div>
+										</li>
+										<li class="personal__item">
+											<div class="personal__item-title">
+												ID заказа 2647494
+											</div>
+											<table class="personal__table">
+												<tbody>
+													<tr>
+														<td>Статус:</td>
+														<td>
+															<span class="personal__table-status">Выдан покупателю</span><span class="personal__table-update">Обновлен 10 февраля 2022г. 17:02</span>
+														</td>
+													</tr>
+													<tr>
+														<td>Дата заказа:</td>
+														<td>Четверг, 10 февраля 2022 г., 09:34</td>
+													</tr>
+													<tr>
+														<td>Дата доставки:</td>
+														<td>Четверг, 10 февраля</td>
+													</tr>
+													<tr>
+														<td>Пункт выдачи:</td>
+														<td>г. Москва, улица Петербургская, дом №52</td>
+													</tr>
+													<tr>
+														<td>Сумма заказа:</td>
+														<td>10 975 ₽</td>
+													</tr>
+												</tbody>
+											</table>
+											<div data-spollers class="personal__prodlist">
+												<button type="button" data-spoller class="personal__prodlist-title _icon-arrow-down">
+													<span>4 товара</span>
+												</button>
+												<div class="personal__prodlist-body">Товары</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="personal__tabs-body personal__unpaid">
+									<div class="personal__empty">
+										<div class="personal__empty-title">Здесь пусто :(</div>
+										<div class="personal__empty-descr">
+											У вас отсутствуют неоплаченные заказы! Воспользуйтесь
+											поиском, чтобы найти всё что нужно
+										</div>
+										<a href="javascript:" class="personal__empty-btn btn btn_green">Начать покупки</a>
+										<a class="personal__empty-backtohome" href="/">Вернуться на главную</a>
+									</div>
+								</div>
+								<div class="personal__tabs-body personal__active"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<img class="_lazy" data-src="img/header/logo.svg" alt="logo-footer" />
+						</div>
+						<div class="footer__descr">
+							Аквариум служит естестенным увлажнителем воздуха. Это полезная
+							функция, особенно в холодное время года, когда система отопления
+							работает на полную мощность. С появлением аквариума пыли вокруг станет
+							намного меньше, а следовательно, и количество аллергенов сократится
+							значительно!
+						</div>
+						<div data-da=".footer__wrapper,991.98,last" class="footer__inner">
+							<div class="footer__cop">©2022 ООО «o2aqua»</div>
+							<ul class="footer__list">
+								<li><a href="javascript:">Политика конфиденциальности</a></li>
+								<li><a href="javascript:">Пользовательское соглашение</a></li>
+								<li><a href="javascript:">Карта сайта</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__menu">
+						<div class="footer__menu-column">
+							<div class="footer__menu-title">Компания</div>
+							<ul>
+								<li><a href="javascript:">Neo Media</a></li>
+								<li><a href="javascript:">Neo Diffuser</a></li>
+								<li><a href="javascript:">Neo Flow</a></li>
+								<li><a href="javascript:">Neo Soil</a></li>
+								<li><a href="javascript:">О нас</a></li>
+								<li><a href="javascript:">Блог</a></li>
+							</ul>
+						</div>
+						<div class="footer__menu-column">
+							<div class="footer__menu-title">Помощь покупателю</div>
+							<ul>
+								<li><a href="javascript:">Аквариумы</a></li>
+								<li><a href="javascript:">Neo Fertilizer</a></li>
+								<li><a href="javascript:">Neo CO2</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__links">
+						<div class="footer__social social">
+							<div class="social__title">Связаться с нами:</div>
+							<ul class="social__list">
+								<li><a class="_icon-whatsapp" href="#"></a></li>
+								<li><a class="_icon-telegram" href="#"></a></li>
+							</ul>
+						</div>
+						<ul class="footer__partners">
+							<li>
+								<a href="javascript:"><img class="_lazy" data-src="img/partners/sberbank.svg" alt="sberbank" /></a>
+							</li>
+							<li>
+								<a href="javascript:"><img class="_lazy" data-src="img/partners/money.svg" alt="money" /></a>
+							</li>
+						</ul>
+						<div class="footer__phone">
+							<div class="footer__phone-title">Горячая линия o2aqua</div>
+							<a href="tel:12412412">8 800 000 000 000</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="popup_auth" aria-hidden="true" class="popup popauth">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<!-- <button data-close type="button" class="popup__close">Закрыть</button> -->
+				<div class="popauth__logo">
+					<svg width="216" height="36" viewBox="0 0 216 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M36.2418 3.14152V5.78304H51.9298H67.6179V8.9056V12.0282L54.6004 12.1249L41.5815 12.2216L39.9825 13.2208C38.9937 13.8393 38.0063 14.8361 37.3947 15.8353C36.4073 17.447 36.4045 17.4628 36.2965 23.1761L36.1885 28.9018L54.1095 28.8167L72.0304 28.7311L72.1258 26.1722L72.2212 23.6132H56.6832H41.1439V20.494V17.3746L54.1361 17.2745C66.8282 17.1768 67.1592 17.1576 68.4819 16.4428C73.5284 13.7164 74.4345 6.5249 70.2141 2.69212C69.207 1.77722 68.0822 1.10718 67.1564 0.872121C66.1788 0.623481 60.8097 0.5 50.9677 0.5H36.2418V3.14152ZM3.70856 7.3943C2.11241 8.12664 0.761709 9.67364 0.273606 11.3286C0.0533979 12.0797 -0.0453446 14.6763 0.0197359 18.0554L0.126328 23.5591L1.10675 24.9601C1.64675 25.7307 2.67625 26.6715 3.39578 27.0509C4.63708 27.7055 5.19813 27.7405 14.5072 27.7405C25.8051 27.7405 26.0449 27.6877 27.9889 24.791L29.0521 23.2084V17.4541C29.0521 11.2348 28.8193 10.2026 27.0366 8.52298C25.2945 6.88162 24.5091 6.77298 14.4356 6.78082C6.01724 6.7874 4.89095 6.8518 3.70856 7.3943ZM80.7602 9.49766L80.8542 12.2216L92.7019 12.3082L104.55 12.3951V13.3813V14.368H95.12C88.9402 14.368 85.3088 14.4973 84.5809 14.7437C81.6985 15.7184 80.0379 18.0561 80.0379 21.1368C80.0379 24.2174 81.6985 26.5551 84.5809 27.5299C85.3313 27.7842 89.6457 27.9057 97.914 27.9057H110.138L110.041 19.5133L109.943 11.1212L108.962 9.7155C108.424 8.94256 107.334 7.96424 106.541 7.542C105.108 6.77718 105.042 6.77354 92.8829 6.77354H80.6648L80.7602 9.49766ZM119.553 7.54088C117.97 8.3855 116.825 9.852 116.322 11.6874C115.878 13.2978 115.902 21.4703 116.355 23.117C116.829 24.8396 119.024 27.0574 120.729 27.5355C121.535 27.7616 125.382 27.9026 130.778 27.9037L139.521 27.9057V31.7028V35.5H142.463H145.404V21.1368V6.77354H133.199C121.058 6.77354 120.987 6.7776 119.553 7.54088ZM151.621 14.6155C151.628 21.4861 151.702 22.6217 152.224 23.7813C152.983 25.4689 154.838 27.1192 156.481 27.5659C157.296 27.7874 161.961 27.8826 169.313 27.8274L180.865 27.7405L180.952 17.257L181.037 6.77354H178.092H175.147V14.533V22.2924H166.157H157.169V14.533V6.77354H154.392H151.614L151.621 14.6155ZM186.912 9.58012V12.3868H198.678H210.444V13.3638V14.3405L200.557 14.437C189.306 14.5462 188.959 14.6201 187.076 17.3148C186.202 18.5649 186.095 18.9803 186.095 21.1368C186.095 23.2933 186.202 23.7086 187.076 24.9587C187.614 25.7301 188.644 26.6715 189.363 27.0509C190.613 27.7105 191.222 27.7446 203.335 27.8343L216 27.9278L215.993 19.9097C215.985 11.1995 215.812 10.2089 213.996 8.52298C212.177 6.83262 211.665 6.77354 198.852 6.77354H186.912V9.58012ZM23.495 17.3396V22.2924H14.5072H5.51931V17.3396V12.3868H14.5072H23.495V17.3396ZM139.521 17.3449V22.303L130.616 22.2151L121.709 22.1273L121.618 17.257L121.528 12.3868H130.524H139.521V17.3449ZM104.55 21.1368V22.2924H95.0723H85.5936V21.1368V19.9811H95.0723H104.55V21.1368ZM210.444 21.1368V22.2924H200.966H191.488V21.1368V19.9811H200.966H210.444V21.1368Z" fill="#212121" />
+					</svg>
+				</div>
+				<div class="popauth__descr">
+					Зарегистрируйтесь и начните совершать умные покупки на
+					<span>o2aqua</span>
+				</div>
+				<div data-tabs class="popauth__tabs">
+					<nav data-tabs-titles class="popauth__tabs-navigation">
+						<button type="button" class="popauth__tabs-title _tab-active">
+							Регистрация
+						</button>
+						<button type="button" class="popauth__tabs-title auth-title">
+							Вход <span>в личный кабинет</span>
+						</button>
+					</nav>
+					<div data-tabs-body class="popauth__tabs-content">
+						<div class="popauth__tabs-body popauth__reg reg">
+							<div class="reg__title">Регистрация</div>
+							<div class="reg__descr">
+								Зарегистрируйтесь и начните совершать умные покупки на o2aqua
+							</div>
+							<form class="reg__form" action="#">
+								<div class="form__line">
+									<label for="login">Номер телефона</label>
+									<input data-required autocomplete="off" type="text" name="phone" data-error="Заполните поле" placeholder="+7" class="input" />
+								</div>
+								<div class="form__line">
+									<label for="name">Имя</label>
+									<input autocomplete="off" type="text" name="name" data-error="Заполните поле" placeholder="" class="input" />
+								</div>
+								<div class="form__line">
+									<label for="pw">Пароль</label>
+									<input data-required autocomplete="off" type="password" name="pw" data-error="Введите пароль" placeholder="" class="input" />
+								</div>
+								<ul class="reg__inner">
+									<li class="_icon-ok">Не менее 8 символов</li>
+									<li class="_icon-ok">Состоит из цифр и латинских букв</li>
+									<li class="_icon-ok">Содержит строчные и заглавные буквы</li>
+								</ul>
+								<button type="submit" class="reg__submit btn btn_green">
+									Зарегистрироваться
+								</button>
+								<div class="reg__policy">
+									Нажимая кнопку “Регистрация”, Вы соглашаетесь на обработку
+									персональных данных в соответствии с
+									<a href="javascript:">Условиями</a>.
+								</div>
+							</form>
+						</div>
+						<div class="popauth__tabs-body popauth__signin signin">
+							<div class="signin__title">Авторизация</div>
+							<div class="signin__descr">
+								Авторизация на <span>o2aqua</span> поможет вам совершать
+								покупки, добавлять понравившиеся товары в избранное и получать
+								бонусы.
+							</div>
+							<form class="signin__form" action="#">
+								<div class="form__line">
+									<label for="login">E-mail или телефон</label>
+									<input data-required autocomplete="off" type="text" name="login" data-error="Заполните поле" placeholder="+7" class="input" />
+								</div>
+								<div class="form__line">
+									<label for="pw">Пароль</label>
+									<input data-required autocomplete="off" type="password" name="pw" data-error="Введите пароль" placeholder="" class="input" />
+								</div>
+								<div class="signin__inner">
+									<div class="signin__rememberme checkbox">
+										<input id="rememberme" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+										<label for="rememberme" class="checkbox__label"><span class="checkbox__text">Запомнить меня</span></label>
+									</div>
+									<button type="btn" class="signin__remindpass">
+										Напомнить пароль
+									</button>
+								</div>
+								<button class="signin__submit btn btn_green">Войти</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup_filter" aria-hidden="true" class="popup popfilter">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="close-modal" />
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup_video" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="close-modal" />
+				</button>
+				<div data-youtube-place class="popup__text"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220306203339"></script>
+</body>
+
+</html>
